@@ -15,3 +15,4 @@ accFoo (a,b,c) (h:t)
     | h > 0 = accFoo (a,b,c+1) t
     | otherwise = accFoo (a,b,c) t
 accFoo acc [] = acc
+

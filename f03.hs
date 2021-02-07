@@ -85,8 +85,3 @@ ordena ((a,b):(c,d):t)
     | otherwise = (a,b) : (c,d) : ordena t
 ordena [] = []
     
-data Movimento = Credito Float | Debito Float
-    deriving Show
-    
-data Extracto = Ext Float [(Data, String, Movimento)]
-    deriving Show
